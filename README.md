@@ -11,4 +11,13 @@ Can we not fake it for free? The consumption tier function app could make every 
 - A convenient blue 'Deploay to Azure' button on GitHub readme preview allows easy installation to any tenant.
 - It should be easy to configure different target endpoints with frequency and result code handling
 
-##
+## Implementation details
+
+### Lowest cost on Azure
+- Consumption plan for Azure Functions
+- Configurable array of endpoints to ping
+- Configurable interval of ping
+
+### Higher cost for more features
+- vnet integration
+- workbook dashboard
