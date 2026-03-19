@@ -9,6 +9,7 @@ This project simulates the feature in a very cheap manner:  Serveless Azure Func
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnulllogicone%2FFakeAlwaysOn%2Fmain%2F.azure%2Fazuredeploy.json)
 
+
 ## Acceptance criteria
 
 - The full feature is deployed automatically by IaC CI/CD and all secrets are in keyvault. Costs should be minimal.
