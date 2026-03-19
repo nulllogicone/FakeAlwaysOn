@@ -16,8 +16,9 @@ param expectedStatusCode int = 200
 @description('Timer trigger interval (CRON expression for every 5 minutes)')
 param timerInterval string = '0 */5 * * * *'
 
-var functionAppName = '${replace(projectName, '-', '')}${uniqueString(resourceGroup().id)}'
-var storageAccountName = '${replace(projectName, '-', '')}${uniqueString(resourceGroup().id)}'
+var uniqueId = uniqueString(resourceGroup().id)
+var functionAppName = '${replace(projectName, '-', '')}${uniqueId}'
+var storageAccountName = substring(concat(replace(toLower(projectName), '-', ''), uniqueId), 0, 24)
 var appInsightsName = '${projectName}-${environmentName}-ai'
 var logWorkspaceName = '${projectName}-${environmentName}-law'
 var appServicePlanName = '${projectName}-${environmentName}-asp'
