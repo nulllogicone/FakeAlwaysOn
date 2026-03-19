@@ -3,3 +3,10 @@ local.settings.json
 # .NET build outputs
 **/bin/
 **/obj/
+
+# Kudu custom deployment temp output
+_functions_publish/
+
+# Local development folders
+.vs/
+_publish_check/
