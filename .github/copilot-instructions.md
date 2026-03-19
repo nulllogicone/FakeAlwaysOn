@@ -8,7 +8,7 @@ description: Instructions for Copilot to follow when working on the FakeAlwaysOn
 This project implements a fake "Always On" feature for Azure App Services on free/cheapest tiers by using an Azure Functions app on Consumption plan to periodically ping health endpoints.
 
 ## Project Structure
-- `src/`: Source code for Azure Functions
+- `/`: Source code for Azure Functions
 - `infrastructure/`: Bicep templates for Azure resources
 - `.azure/`: Azure deployment configuration
 

@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ENDPOINTS": "[\"https://example.com/health\", \"https://your-app.azurewebsites.net/health\"]",
+    "EXPECTED_STATUS_CODE": "200",
+    "TIMER_INTERVAL": "0 */5 * * * *"
+  }
+}
