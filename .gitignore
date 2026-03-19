@@ -1,4 +1,4 @@
-src/local.settings.json
+local.settings.json
 
 # .NET build outputs
 **/bin/

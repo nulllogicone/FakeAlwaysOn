@@ -87,7 +87,7 @@ After deployment, update the endpoints in Azure Portal:
 
 1. Install dependencies:
 ```bash
-cd src
+
 dotnet restore
 ```
 
