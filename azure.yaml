@@ -1,0 +1,18 @@
+name: FakeAlwaysOn
+metadata:
+  description: 'Fake Always On - Health check function for keeping Azure App Services active on free tier'
+  author: 'Your Name'
+
+services:
+  api:
+    project: src
+    language: csharp
+    module: FakeAlwaysOn
+
+infra:
+  path: infra
+  module: main
+
+hooks:
+  postdeploy:
+    - pwsh: Write-Host "FakeAlwaysOn health check function deployed successfully!"

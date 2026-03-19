@@ -5,7 +5,7 @@ Deploy an Azure Functions app that pings configurable endpoints to simulate an "
 
 ## **Project Information**
 - **AppName**: FakeAlwaysOn
-- **Technology Stack**: Azure Functions (Node.js or .NET Core)
+- **Technology Stack**: Azure Functions (.NET Core)
 - **Application Type**: Serverless function that periodically pings health endpoints
 - **Containerization**: Not required (Functions runtime)
 - **Dependencies**: None (simple HTTP requests)
@@ -32,11 +32,11 @@ Data flow:
 - **Hosting Service Type**: Azure Functions
 - **SKU**: Consumption Plan (Y1 - 1 million executions free)
 - **Configuration**:
-  - Language: Node.js (simpler for HTTP requests)
+  - Language: dotnet
   - Environment Variables:
     - ENDPOINTS: JSON array of URLs to ping
     - INTERVAL_MINUTES: Ping interval (default 5)
-    - EXPECTED_STATUS: Expected HTTP status code (default 200)
+    - EXPECTED_STATUS: Expected HTTP status code (default <400)
 - **Dependencies Resource**:
   - Application Insights
     - SKU: Basic
@@ -60,7 +60,7 @@ Data flow:
 6. Deploy to Azure
 
 ## **Design Decisions Needed**
-- Programming language: .NET Core?
+- Programming language: .NET Core
 - Configuration method: Environment variables for simplicity (Key Vault comes later)
 - Error handling: Retry logic for failed pings? (Not for now)
 - Monitoring: Basic logging vs detailed metrics? (dump all to Log Analytics Workspace)
