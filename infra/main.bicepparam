@@ -1,3 +1,4 @@
+using 'main.bicep'
 param environmentName = 'dev'
 param projectName = 'FakeAlwaysOn'
 param location = 'westeurope'

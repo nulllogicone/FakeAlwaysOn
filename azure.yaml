@@ -1,7 +1,7 @@
 name: FakeAlwaysOn
 metadata:
   description: 'Fake Always On - Health check function for keeping Azure App Services active on free tier'
-  author: 'Your Name'
+  author: 'frederic@luchting.de'
 
 services:
   api:

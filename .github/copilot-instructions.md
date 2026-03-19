@@ -41,6 +41,5 @@ This project implements a fake "Always On" feature for Azure App Services on fre
 
 ## Deployment
 - Use AZD for infrastructure and deployment
-- Store secrets in Key Vault
 - Enable Application Insights for monitoring
 - Support multiple environments (dev, prod)

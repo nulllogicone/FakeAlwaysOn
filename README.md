@@ -1,9 +1,9 @@
 # Fake: Always On Feature for free
 
-> About: Azure App Services - AlwaysOn Feature - only in > 50 EUR/month tier
+> About: Azure App Services - AlwaysOn Feature - not available in free plan
 
-I run all development on cheapest sku, full solution costs < 40 EUR/month. But this also means my WebApi has always a heavy cold start when I call it after a while. I want it Always On!
-Can we not fake it for free? The consumption tier function app could make every x minutes a request to the health endpoint. 
+I enjoy to run development experiments on cheapest sku, but this means my Web app or Apis always have a slow cold start when I call it after a while. I want them Always On!
+This project simulates the feature in a very cheap manner:  Serveless Azure Function in consumption tier makes every x minutes a request to configurable  endpoints. 
 
 ## Quick Deploy
 

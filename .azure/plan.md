@@ -61,6 +61,6 @@ Data flow:
 
 ## **Design Decisions Needed**
 - Programming language: .NET Core
-- Configuration method: Environment variables for simplicity (Key Vault comes later)
+- Configuration method: Environment variables for simplicity 
 - Error handling: Retry logic for failed pings? (Not for now)
 - Monitoring: Basic logging vs detailed metrics? (dump all to Log Analytics Workspace)
